@@ -15,8 +15,9 @@
 		710B66C71D9EB909007EDB10 /* tableTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710B66C61D9EB909007EDB10 /* tableTestUITests.swift */; };
 		71E8775E1DA28ED3009BDED8 /* ResourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8775D1DA28ED3009BDED8 /* ResourceModel.swift */; };
 		71E877611DA2A0E7009BDED8 /* Servolist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E8775F1DA2A0E7009BDED8 /* Servolist.xcdatamodeld */; };
-		71E877641DA2BBC0009BDED8 /* Liste+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E877621DA2BBC0009BDED8 /* Liste+CoreDataClass.swift */; };
-		71E877651DA2BBC0009BDED8 /* Liste+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E877631DA2BBC0009BDED8 /* Liste+CoreDataProperties.swift */; };
+		71E8776C1DA40187009BDED8 /* Liste+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8776A1DA40187009BDED8 /* Liste+CoreDataClass.swift */; };
+		71E8776D1DA40187009BDED8 /* Liste+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8776B1DA40187009BDED8 /* Liste+CoreDataProperties.swift */; };
+		71E8776F1DA401DA009BDED8 /* ServoListe.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E8776E1DA401DA009BDED8 /* ServoListe.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		710B66C81D9EB909007EDB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E8775D1DA28ED3009BDED8 /* ResourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceModel.swift; sourceTree = "<group>"; };
 		71E877601DA2A0E7009BDED8 /* Servolist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Servolist.xcdatamodel; sourceTree = "<group>"; };
-		71E877621DA2BBC0009BDED8 /* Liste+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Liste+CoreDataClass.swift"; sourceTree = "<group>"; };
-		71E877631DA2BBC0009BDED8 /* Liste+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Liste+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71E8776A1DA40187009BDED8 /* Liste+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Liste+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71E8776B1DA40187009BDED8 /* Liste+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Liste+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71E8776E1DA401DA009BDED8 /* ServoListe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServoListe.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,8 @@
 		710B66A81D9EB908007EDB10 /* tableTest */ = {
 			isa = PBXGroup;
 			children = (
-				71E877621DA2BBC0009BDED8 /* Liste+CoreDataClass.swift */,
-				71E877631DA2BBC0009BDED8 /* Liste+CoreDataProperties.swift */,
+				71E8776A1DA40187009BDED8 /* Liste+CoreDataClass.swift */,
+				71E8776B1DA40187009BDED8 /* Liste+CoreDataProperties.swift */,
 				710B66A91D9EB908007EDB10 /* AppDelegate.swift */,
 				710B66AB1D9EB909007EDB10 /* ViewController.swift */,
 				710B66AD1D9EB909007EDB10 /* Assets.xcassets */,
@@ -112,6 +114,7 @@
 				710B66B21D9EB909007EDB10 /* Info.plist */,
 				71E8775D1DA28ED3009BDED8 /* ResourceModel.swift */,
 				71E8775F1DA2A0E7009BDED8 /* Servolist.xcdatamodeld */,
+				71E8776E1DA401DA009BDED8 /* ServoListe.json */,
 			);
 			path = tableTest;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				710B66AE1D9EB909007EDB10 /* Assets.xcassets in Resources */,
+				71E8776F1DA401DA009BDED8 /* ServoListe.json in Resources */,
 				710B66B11D9EB909007EDB10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				710B66AC1D9EB909007EDB10 /* ViewController.swift in Sources */,
-				71E877651DA2BBC0009BDED8 /* Liste+CoreDataProperties.swift in Sources */,
+				71E8776D1DA40187009BDED8 /* Liste+CoreDataProperties.swift in Sources */,
 				71E877611DA2A0E7009BDED8 /* Servolist.xcdatamodeld in Sources */,
-				71E877641DA2BBC0009BDED8 /* Liste+CoreDataClass.swift in Sources */,
+				71E8776C1DA40187009BDED8 /* Liste+CoreDataClass.swift in Sources */,
 				71E8775E1DA28ED3009BDED8 /* ResourceModel.swift in Sources */,
 				710B66AA1D9EB909007EDB10 /* AppDelegate.swift in Sources */,
 			);

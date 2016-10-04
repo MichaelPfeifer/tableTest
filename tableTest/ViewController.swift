@@ -15,7 +15,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     let appDelegate = NSApplication.shared().delegate as! AppDelegate
     
-    
+    var listen: [Liste]! = [Liste]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +24,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-  
-        return 1
+        guard listen != nil else {
+            return 0
+        }
+        return listen.count
     }
     
     
@@ -35,9 +37,13 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
         if let column = tableColumn {
             if let cellView = tableView.make(withIdentifier: column.identifier, owner: nil) as? NSTableCellView {
+                guard listen != nil else {
+                    return cellView
+                }
+                
                 
                 if (column.identifier == "name") {
-                    cellView.textField?.stringValue = "New Servo"
+                    cellView.textField?.stringValue = "New servo"
                     return cellView
                 }
                 else if (column.identifier == "busNr") {

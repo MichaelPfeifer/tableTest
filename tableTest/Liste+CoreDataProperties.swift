@@ -2,7 +2,7 @@
 //  Liste+CoreDataProperties.swift
 //  tableTest
 //
-//  Created by Michael Pfeifer on 03.10.16.
+//  Created by Michael Pfeifer on 04.10.16.
 //  Copyright © 2016 Michael Pfeifer. All rights reserved.
 //
 
@@ -17,5 +17,6 @@ extension Liste {
     }
 
     @NSManaged public var servoname: String?
+    @NSManaged public var busnummer: Int16
 
 }

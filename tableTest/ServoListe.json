@@ -1,0 +1,17 @@
+{
+    "listen": [
+    {
+       "servoname": "Linker Daumen",
+       "busnummer": 11
+    }
+    {
+       "servoname": "Linker Zeigefinger",
+        "busnummer": 12
+    }
+    {
+        "servoname": "Linker Ringfinger",
+        "busnummer": 13
+    }
+
+    ]
+}
