@@ -32,22 +32,19 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-       
-
-        
-        if let column = tableColumn {
+       if let column = tableColumn {
             if let cellView = tableView.make(withIdentifier: column.identifier, owner: nil) as? NSTableCellView {
                 guard listen != nil else {
                     return cellView
                 }
-                
+         //Das geht Nicht       let liste = listen[indexpath.row]
                 
                 if (column.identifier == "name") {
-                    cellView.textField?.stringValue = "New servo"
-                    return cellView
+                    cellView.textField?.stringValue = "New servo" //und da solte es übergeben meiner meinung  werden aber wie
+                    return cellView                               //ich habe mir gedacht statt ( "new Servo" ) liste.servoname
                 }
                 else if (column.identifier == "busNr") {
-                    cellView.textField?.intValue = 11
+                    cellView.textField?.intValue = 11       // und da auch
                     return cellView
                 }
                 
